@@ -1,0 +1,7 @@
+name: stuck-cert-gcp-dns-failure
+description: tests understanding why a cert-manager certificate is stuck in a pending state for a google cloud dns domain
+category: kubernetes
+difficulty: low
+successCriteria:
+- detects the certificate is stuck in a pending state and cannot be issued
+- understands the issue is due to external dns (or comparable service) not creating the necessary records

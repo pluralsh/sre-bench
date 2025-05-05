@@ -1,0 +1,8 @@
+name: opa-missing-run-as-non-root
+description: tests troubleshooting an OPA validation failure due to a pod not explicitly setting runAsNonRoot
+category: kubernetes
+difficulty: low
+successCriteria:
+- explains the OPA policy language involved
+- finds the current pod security context settings
+- generates a PR to add the missing security context or reconfigure the helm chart that controls the deployment

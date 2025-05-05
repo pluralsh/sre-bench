@@ -1,0 +1,8 @@
+name: k8s-mangled-yaml
+description: tests understanding why a kubernetes manifest is invalid
+category: kubernetes
+difficulty: low
+successCriteria:
+- some possible examples are invalid enum values for image fields, typos in field names or overall invalid yaml structure
+- suggests a reasonable fix for the yaml typo
+- generates a PR to fix the yaml typo if correct

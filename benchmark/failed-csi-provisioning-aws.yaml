@@ -1,0 +1,9 @@
+name: failed-csi-provisioning-aws
+description: tests understanding why a csi volume is not being provisioned
+category: kubernetes
+difficulty: low
+successCriteria:
+- detects the csi volume is not being provisioned
+- understands the issue is due to the csi driver not being installed
+- detects if there are permissions issues with the relevant cloud provider
+- finds csi driver logs to reinforce the issue against aws-ebs-csi-driver

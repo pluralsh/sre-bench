@@ -1,0 +1,9 @@
+name: invalid-image-helm
+description: a test case where the image of a kubernetes is invalid, but referenced in a helm chart's values file
+category: kubernetes
+difficulty: low
+successCriteria:
+- confirms the image is invalid
+- shows how to find a potentially correct image url
+- generates a PR to rewire the image from whatever gitops code misconfigures it
+- does not get confused by the indeterminate helm chart values file structure

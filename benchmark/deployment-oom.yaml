@@ -1,0 +1,10 @@
+name: deployment-oom
+description: tests understanding why a deployment is OOMing
+category: kubernetes
+difficulty: low
+successCriteria:
+- detects the deployment is OOMing
+- understands the issue is due to the deployment's resource requests being too high
+- shows how to find the deployment's resource requests
+- finds historical utilization data to justify the increase
+- generates a PR to increase the deployment's resource requests

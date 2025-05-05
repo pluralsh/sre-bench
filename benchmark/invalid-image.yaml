@@ -1,0 +1,8 @@
+name: invalid-image
+description: a test case where the image of a kubernetes is invalid
+category: kubernetes
+difficulty: low
+successCriteria:
+- confirms the image is invalid
+- shows how to find a potentially correct image url
+- generates a PR to rewire the image from whatever gitops code misconfigures it

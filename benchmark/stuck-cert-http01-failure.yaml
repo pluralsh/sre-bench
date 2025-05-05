@@ -1,0 +1,8 @@
+name: stuck-cert-http01-failure
+description: tests understanding why a cert-manager certificate is stuck in a pending state for a http01 challenge
+category: kubernetes
+difficulty: low
+successCriteria:
+- detects the certificate is stuck in a pending state and cannot be issued
+- understands the issue is due to the http01 challenge not being satisfied
+- detects the root cause of the network issue

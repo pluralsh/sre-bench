@@ -6,15 +6,28 @@ This is meant to be a general framework for evaluating AI against devops and SRE
 * Cost of testing - Devops usually involves creation and mutation of infrastructure in the cloud.  Each of these has significant time and dollar cost, and so the benchmark should, as best as possible, be built in a way to simplify that
 * Heterogeneity - Most operations are heavily based on tribal knowledge that is nonstandardized across companies.  For problems that require this, it's ok to assume the necessary integrations exist - provided there's a documented integration path.
 
+For each test case, they will have the following schema:
+
+
+```yaml
+name: string # short name of the case
+description: string # a longer description explaining the case
+category: kubernetes | terraform | application # what sort of issue this is
+difficulty: low | medium | high
+successCriteria: [string] # a list of grading criteria an evaluator should use to determine the full grade
+```
+
 As far as the evaluation mechanism, each test case will have a result schema as follows:
 
 ```yaml
-name: the name of the test case
-description: a full description of the issue being troubleshooted
-grade: GRADE
-resultUrl: url to a video of the run for confirmation of the grade
-repoUrl: deep link into a git repo that has the test case
-prUrl: a pull request link in the event the AI was able to fix the issue
+name: string # the name of the test case
+description: string # a full description of the issue being troubleshooted
+grade: integer # 0-4 grade
+resultUrl: string # url to a video of the run for confirmation of the grade
+gitLocation: 
+  url: string # url to the repo this test was implemented in
+  location: string # file/folder location in git of the code implementing it
+prUrl: string # a pull request link in the event the AI was able to fix the issue
 ```
 
 The idea behind having the associated urls is it can not only document how the AI did, but also allow third parties to confirm or dispute the grade given.  This allows for a consensus to form given the inherent vagueness of the space.

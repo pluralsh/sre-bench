@@ -1,0 +1,9 @@
+name: failed-csi-provisioning-azure
+description: tests understanding why a csi volume is not being provisioned in Azure
+category: kubernetes
+difficulty: low
+successCriteria:
+- detects the csi volume is not being provisioned
+- understands the issue is due to the csi driver not being installed
+- detects if there are permissions issues with the relevant cloud provider
+- csi driver logs are likely inaccessible, but use whatever is available
