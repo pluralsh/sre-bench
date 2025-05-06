@@ -1,0 +1,7 @@
+name: terraform-aws-quota-exceeded
+description: can determine a terraform apply failed and suggest the appropriate quota value to increase
+category: terraform
+difficulty: low
+successCriteria:
+- understand terraform output appropriately and disaggregates noise
+- can find the exact aws quota value to increase to allow the apply to succeed

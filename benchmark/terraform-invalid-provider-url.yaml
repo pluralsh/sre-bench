@@ -1,0 +1,7 @@
+name: terraform-invalid-provider-url
+description: can determine that a terraform plan/apply failed due to an invalid provider URL and suggests the correct URL in place
+category: terraform
+difficulty: low
+successCriteria:
+- understand terraform output appropriately and disaggregates noise
+- can suggest a correct provider url to substitute the invalid one

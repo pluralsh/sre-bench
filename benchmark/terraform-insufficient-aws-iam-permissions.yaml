@@ -1,0 +1,8 @@
+name: terraform-insufficient-aws-iam-permissions
+description: can determine a terraform apply failed due to insufficient permissions and suggest the appropriate permissions to add
+category: terraform
+difficulty: low
+successCriteria:
+- understand terraform output appropriately and disaggregates noise
+- finds the specific aws iam permissions lacking
+- suggests a valid iam policy document to apply to provide the missing permissions
