@@ -1,0 +1,7 @@
+name: app-specific-metric-fault
+description: tests troubleshooting an issue related to a domain-specific metric in a failed state, eg a regression in time spent on the cart page of an e-commerce site site
+category: application
+difficulty: high
+successCriteria:
+- can identify the root cause of the issue
+- can implement the fix

@@ -1,0 +1,9 @@
+name: nested-application-500-errors
+description: tests troubleshooting anomolous 500 error rates caused by a downstream microservice dependency
+category: application
+difficulty: high
+successCriteria:
+- cross-references with application logs for possible issues
+- can find the root cause was in the dependent application
+- if permissions allow, identify recent code changes in the dependent application that could have introduced the issue
+- can implement the fix again if permissions allow

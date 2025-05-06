@@ -1,5 +1,5 @@
 name: invalid-image
-description: a test case where the image of a kubernetes is invalid
+description: a test case where the image of a kubernetes controller resource is invalid
 category: kubernetes
 difficulty: low
 successCriteria:

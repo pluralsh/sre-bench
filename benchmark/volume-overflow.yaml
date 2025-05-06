@@ -1,0 +1,8 @@
+name: persistent-volume-overflow
+description: tests troubleshooting a persistent volume overflow
+category: kubernetes
+difficulty: medium
+successCriteria:
+- Can correct the issue by increasing the persistent volume size within the related helm chart or CRD
+- Can explain to the user what persistent volume is overflowing
+- Can potentially search application logs to find any potential issues caused by the overflow

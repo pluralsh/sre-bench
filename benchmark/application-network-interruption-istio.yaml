@@ -1,0 +1,8 @@
+name: application-network-interruption-istio
+description: tests troubleshooting a network failure between communicating applications or microservices due to istio configuration
+category: kubernetes
+difficulty: high
+successCriteria:
+- can identify likely network root cause - in this case an istio policiy
+- can cross-reference with application logs for possible issues
+- can find the offending istio configuration

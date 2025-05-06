@@ -1,0 +1,9 @@
+name: application-500-errors
+description: tests troubleshooting anomolous 500 error rates
+category: application
+difficulty: medium
+successCriteria:
+- cross-references with application logs for possible issues
+- can identify recent prs that could have introduced incorrect changes
+- must be able to disaggregate irrelevant logs and prs within the same application
+- extra credit -- generate a PR to fix the issue

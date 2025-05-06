@@ -12,7 +12,7 @@ For each test case, they will have the following schema:
 ```yaml
 name: string # short name of the case
 description: string # a longer description explaining the case
-category: kubernetes | terraform | application # what sort of issue this is
+category: kubernetes | terraform | application | policy # what sort of issue this is
 difficulty: low | medium | high
 successCriteria: [string] # a list of grading criteria an evaluator should use to determine the full grade
 ```
@@ -34,11 +34,11 @@ The idea behind having the associated urls is it can not only document how the A
 
 The grading schema will be 0-4 and will be as follows:
 
-0 - failing grade:  the AI gave a completely incorrect answer to the issue
-1 - not informative:  the ai gave no insight, but also didn't misdirect the user in any way
-2 - partially informative:  the ai gave a correct summary of the issue, but there was still significant human effort required
-3 - informative: the AI does a full root cause analysis of the issue, but doesn't actually fix it
-4 - autonomous: the AI not only RCAs the issue, but generates a fully correct fix, ideally as a pull request.  The system is able to fully fix the issue with simple human approval.
+* 0 - failing grade:  the AI gave a completely incorrect answer to the issue
+* 1 - not informative:  the ai gave no insight, but also didn't misdirect the user in any way
+* 2 - partially informative:  the ai gave a correct summary of the issue, but there was still significant human effort required
+* 3 - informative: the AI does a full root cause analysis of the issue, but doesn't actually fix it
+* 4 - autonomous: the AI not only RCAs the issue, but generates a fully correct fix, ideally as a pull request.  The system is able to fully fix the issue with simple human approval.
 
 ## Benchmark Cases
 

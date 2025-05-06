@@ -1,7 +1,7 @@
 name: operator-crashloop-missing-perms
 description: tests understanding why an operator is crashlooping due to missing RBAC  spermissions
 category: kubernetes
-difficulty: low
+difficulty: medium
 successCriteria:
 - detects the operator pod is crashlooping
 - understands the issue is due to missing RBAC permissions
