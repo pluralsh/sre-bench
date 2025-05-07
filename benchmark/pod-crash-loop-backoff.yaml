@@ -1,0 +1,10 @@
+name: pod-crash-loop-backoff
+description: tests understanding of a pod in CrashLoopBackoff due to misconfigured liveness probe timeouts
+category: kubernetes
+difficulty: medium
+successCriteria:
+  - identifies the pod is in CrashLoopBackoff state
+  - determines the liveness probe timeout is too aggressive for the application startup time
+  - finds the deployment or statefulset configuration with the problematic probe
+  - generates a PR to adjust the probe's initialDelaySeconds and timeoutSeconds to appropriate values
+  - explains the relationship between probe configuration and container startup time

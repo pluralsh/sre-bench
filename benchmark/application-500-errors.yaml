@@ -1,5 +1,5 @@
 name: application-500-errors
-description: tests troubleshooting anomolous 500 error rates
+description: tests troubleshooting anomalous 500 error rates
 category: application
 difficulty: medium
 successCriteria:

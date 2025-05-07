@@ -1,0 +1,10 @@
+name: multi-dependency-failure-cascade
+description: tests identifying the root cause in a scenario where backend service failure impacts multiple frontend services
+category: infrastructure
+difficulty: high
+successCriteria:
+  - identifies multiple service failures across the platform
+  - determines the services form a dependency chain
+  - traces the failures to the original root cause service
+  - prioritizes fixing the root service rather than the symptoms
+  - suggests implementing better resilience patterns
