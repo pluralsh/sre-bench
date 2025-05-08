@@ -1,0 +1,8 @@
+name: ingress-nginx-admission-webhook-failure
+description: tests that it can properly troubleshoot incorrect admission webhook configuration in the ingress-nginx helm chart (a common default error)
+category: kubernetes
+difficulty: medium
+successCriteria:
+- understands the root cause of pod startup failures due to admission webhook cert config
+- suggests either disabling the webhook to avoid it or using cert-manager to generate the needed cert
+- suggests the correct values override to do this
