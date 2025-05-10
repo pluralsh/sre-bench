@@ -1,0 +1,10 @@
+name: resource-quota-exhaustion
+description: tests troubleshooting deployments that fail due to namespace resource quota constraints
+category: kubernetes
+difficulty: medium
+successCriteria:
+- identifies the deployment failures are due to resource quota limits
+- locates and analyzes the namespace ResourceQuota object
+- examines current resource usage in the namespace
+- suggests appropriate quota increases or deployment resource adjustments
+- generates a PR with the recommended resource configuration changes

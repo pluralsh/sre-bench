@@ -1,5 +1,5 @@
 name: operator-crashloop-missing-perms
-description: tests understanding why an operator is crashlooping due to missing RBAC  spermissions
+description: tests understanding why an operator is crashlooping due to missing RBAC permissions
 category: kubernetes
 difficulty: medium
 successCriteria:

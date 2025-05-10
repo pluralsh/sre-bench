@@ -1,0 +1,9 @@
+name: kubernetes-version-compatibility
+description: tests identifying API version incompatibilities between manifests and the cluster version
+category: kubernetes
+difficulty: medium
+successCriteria:
+- identifies the deployment is failing due to unsupported API versions
+- determines the Kubernetes cluster version
+- identifies which API resources are using deprecated or unsupported versions
+- generates a PR that updates the manifests to use compatible API versions

@@ -1,0 +1,10 @@
+name: corrupted-configmap-reference
+description: tests troubleshooting an application that fails due to malformed data in a ConfigMap
+category: kubernetes
+difficulty: medium
+successCriteria:
+- identifies the application error is related to invalid ConfigMap data
+- locates the ConfigMap with corrupted YAML or JSON formatting in its data fields
+- determines how the application is consuming the ConfigMap
+- generates a PR with properly formatted ConfigMap data
+- explains the impact of ConfigMap formatting on application behavior

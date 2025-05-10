@@ -1,0 +1,8 @@
+name: memory-leak-detection
+description: tests identifying an application with a memory leak pattern
+category: application
+difficulty: high
+successCriteria:
+- identifies the application is experiencing increasing memory usage over time
+- analyzes memory usage patterns to determine it's a leak rather than normal growth
+- suggests memory profiling methods or tools to confirm the source
