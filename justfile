@@ -8,8 +8,8 @@ upload-videos:
         exit 1
     fi
 
-    if [ -z "${S3_BUCKET_URL:-}" ]; then
-        echo "Error: S3_BUCKET_URL environment variable must be set"
+    if [ -z "${AWS_PROFILE:-}" ]; then
+        echo "Error: AWS_PROFILE environment variable must be set"
         exit 1
     fi
 
@@ -18,11 +18,14 @@ upload-videos:
         exit 1
     fi
 
-    echo "Uploading videos from ${RECORDING_PATH} to ${S3_BUCKET_URL}"
-    aws s3 sync "${RECORDING_PATH}" "${S3_BUCKET_URL}" \
+    S3_BUCKET="s3://plrl-bench-assets"
+    echo "Uploading videos from ${RECORDING_PATH} to ${S3_BUCKET} using profile ${AWS_PROFILE}"
+    aws s3 sync "${RECORDING_PATH}" "${S3_BUCKET}" \
         --exclude "*" \
+        --include "*.mov" \
         --include "*.mp4" \
         --include "*.webm" \
-        --include "*.mkv"
+        --include "*.mkv" \
+        --profile "${AWS_PROFILE}"
 
     echo "Video upload complete"

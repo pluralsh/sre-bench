@@ -1,7 +1,7 @@
 name: k8s-mangled-yaml
 description: tests understanding why a kubernetes manifest is invalid
 grade: 4
-resultUrl:
+resultUrl: https://plrl-bench-assets.s3.us-east-2.amazonaws.com/k8s-mangled-yaml.mov
 gitLocation:
   url: https://github.com/pluralsh/sre-bench-impl
   location: cases/k8s-mangled-yaml
