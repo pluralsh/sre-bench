@@ -1,0 +1,8 @@
+name: invalid-image
+description: a test case where the image of a kubernetes controller resource is invalid
+grade: 4
+resultUrl: https://plrl-bench-assets.s3.us-east-2.amazonaws.com/invalid-image.mov
+gitLocation:
+  url: https://github.com/pluralsh/sre-bench-impl
+  location: cases/invalid-image
+prUrl: https://github.com/pluralsh/sre-bench-impl/pull/5
